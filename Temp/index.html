@@ -24,12 +24,10 @@
     <div class="content">
     <h2 class="heading1">Always Choose Good Food</h2>
 
-    <p class="para font">this is the main para this is the main 
-            parathis is the main parathis is the main parathis
-            is the main parathis is the main parathis is the main 
-            parathis is the main parathis is the main parathis is the 
-            main parathis is the main parathis is the main parathis is 
-            the main parathis is the main parathis is the main parathis is
+    <p class="para font">A great restaurant is one that just makes you feel like you're not sure whether 
+        you went out or you came home and confuses you. If it can do both of those things at the same time,
+         you're hooked.
+        
     </p>
     <a class="btn" href="#">Our Menu</a>
     </div>
@@ -146,7 +144,12 @@
                 </div>
             </div>
         </section>
-
+<script type="text/javascript">
+    window.addEventListener('scroll',function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY > 0);
+    });
+    </script>
 
 </body>
 </html>
