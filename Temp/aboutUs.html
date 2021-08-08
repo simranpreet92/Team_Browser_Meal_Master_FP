@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Master</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+</head>
+<body>
+    <header>  <a href="#" class="logo"><img src="../Image/mm.png" alt="" width="200px" height="80px"></a>
+        <ul class="nvbar">
+            <li class="nvlist"><a class="nvanchor font" href="#">Home</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="aboutUs.html">About Us</a></li>   
+            <li class="nvlist"><a class="nvanchor font" href="#">Menu</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="#">Experts</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="#">Contacts</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="#">Testimonials</a></li>
+        </ul>
+        </header>
+        <section class="banner" id="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener('scroll',function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky",window.scrollY > 0);
+            });
+            </script>   
+</body>
+</html>

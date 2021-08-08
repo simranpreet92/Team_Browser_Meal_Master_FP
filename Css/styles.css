@@ -204,6 +204,7 @@ header.sticky{
     color: #ff0195;
     font-weight: 600;
 }
+<<<<<<< HEAD
 @media (max-width:991px) {
     header,
     header.sticky{
@@ -262,4 +263,14 @@ header.sticky{
         margin: 10px;
       
     }
+=======
+footer{
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+    padding: 4em;
+}
+footer a{
+    color: #fff;
+>>>>>>> 2505f7182d934ac1858290bffb370f0c44e8f316
 }
