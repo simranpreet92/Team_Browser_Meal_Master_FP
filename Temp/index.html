@@ -10,6 +10,7 @@
 <body>
     <header>
         <a href="#" class="logo"><img src="../Image/mm.png" alt="" width="200px" height="80px"></a>
+        <div class="menuToggle" onclick="Tmenu();"></div>
         <ul class="nvbar">
             <li class="nvlist"><a class="nvanchor font" href="#">Home</a></li>
             <li class="nvlist"><a class="nvanchor font" href="#">About</a></li>   
@@ -35,8 +36,10 @@
     <section class="section2" id="section2">
         <div class="title">
             <h2 class="titletext font">Our <span class="titlepink">H</span>ighlights</h2>
-            <p class="font">this is the main para this is the main 
-                parathis is the main parathis is the main</p>
+            <p class="font">
+            	
+            	This is our Menu to explore your choice and food
+            </p>
         </div>
         <div class="content">
             <div class="box">
@@ -149,6 +152,13 @@
         const header = document.querySelector('header');
         header.classList.toggle("sticky",window.scrollY > 0);
     });
+
+    function Tmenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const nvbar = document.querySelector('.nvbar');
+        menuToggle.classList.toggle('active');
+        nvbar.classList.toggle('active');
+    }
     </script>
 
 </body>

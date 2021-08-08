@@ -204,3 +204,62 @@ header.sticky{
     color: #ff0195;
     font-weight: 600;
 }
+@media (max-width:991px) {
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+
+    .nvbar{
+        display: none;
+    }
+    .nvbar.active{
+        width: 100%;
+        height: calc(100% - 100px);
+        position: fixed;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:rgb(46, 51, 73);
+    }
+    .nvlist{
+        margin-left: 0;
+    }
+    .nvanchor{
+        text-decoration: none;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../Image/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(../Image/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .heading1{
+        font-size: 3em;
+        color: #fff;
+    }
+    .section2.content{
+        margin-top: 20px;
+    }
+    .box{
+  
+        margin: 10px;
+      
+    }
+}
