@@ -204,3 +204,12 @@ header.sticky{
     color: #ff0195;
     font-weight: 600;
 }
+footer{
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+    padding: 4em;
+}
+footer a{
+    color: #fff;
+}
