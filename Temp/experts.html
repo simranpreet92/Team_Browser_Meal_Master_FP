@@ -18,9 +18,56 @@
             <li class="nvlist"><a class="nvanchor font" href="#">My List</a></li>
         </ul>
         </header>
-        <section class="banner" id="banner"></section>
-      
-       
+        <section class="banner" id="banner">
+            <div class="content">
+        
+                <h3 class="heading2">Excellent Food</h3>
+                <p class="para font">We offer our clients excellent quality services for many years, with the best and 
+                    delicious food in the city. 
+             </p>
+            </div>
+        </section>
+        <section class="expert" id="expert">
+            <div class="title">
+                <h2 class="titletext font">Our Kitchen<span class="titlepink">E</span>xperts</h2>
+                <p class="font">
+                    
+                   
+                </p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imagebox">
+                        <img src="F:\final project browser\Team_Browser_Meal_Master_FP\Image\expert1.jpg" alt="menu1">
+                    </div>
+                    <div class="text">
+                        <h3 class="font"><i>"When you eat food with your family and friends, it always tastes better.So Enjoy food with family and friends" </i></h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imagebox">
+                        <img src="F:\final project browser\Team_Browser_Meal_Master_FP\Image\expert2.jpg" alt="menu2">
+                    </div>
+                    <div class="text">
+                        <h3 class="font">"Excellent environment, friendly service, great menu choices and really decent food and affordable prices"</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imagebox">
+                        <img src="F:\final project browser\Team_Browser_Meal_Master_FP\Image\expert3.jpg" alt="menu1">
+                    </div>
+                    <div class="text">
+                        <h3 class="font">"Extremly high standard of cusines, coupled with great restaurant atmosphere and very courteous staff"</h3>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener('scroll',function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky",window.scrollY > 0);
+            });
+            </script>  
 
        
 </body>
