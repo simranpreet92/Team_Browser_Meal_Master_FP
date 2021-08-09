@@ -219,7 +219,27 @@ header.sticky{
     color: #ff0195;
     font-weight: 600;
 }
-
+footer{
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+    padding: 6em;
+}
+footer a{
+    color: #fff;
+}
+/* styles for the copyright div */
+#copyright {
+    float: left;
+    margin-top: 2em;
+    width: 70%;
+  }
+  
+  /* styles for the social div */
+  #social {
+    float: right;
+    width: 30%;
+  }
 
 @media (max-width:991px) {
     header,
@@ -280,12 +300,4 @@ header.sticky{
       
     }
 
-footer{
-    background-color: #666;
-    text-align: center;
-    color: #fff;
-    padding: 4em;
-}
-footer a{
-    color: #fff;
 }
