@@ -40,6 +40,21 @@ body{
     max-width: 900px;
     text-align: center;
 }
+.banner1{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Image/11.jpg);
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+.banner1 .content{
+    max-width: 900px;
+    text-align: center;
+}
 
 .heading1{
     font-size: 4em;
