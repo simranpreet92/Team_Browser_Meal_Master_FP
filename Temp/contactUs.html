@@ -11,14 +11,28 @@
     <header>  <a href="#" class="logo"><img src="../Image/mm.png" alt="" width="200px" height="80px"></a>
         <ul class="nvbar">
             <li class="nvlist"><a class="nvanchor font" href="index.html">Home</a></li>
-            <li class="nvlist"><a class="nvanchor font" href="aboutUs.html">About Us</a></li>   
+            <li class="nvlist"><a class="nvanchor font" href="#about">About Us</a></li>   
             <li class="nvlist"><a class="nvanchor font" href="menu.html">Menu</a></li>
             <li class="nvlist"><a class="nvanchor font" href="experts.html">Experts</a></li>
             <li class="nvlist"><a class="nvanchor font" href="contactUs.html">Contact Us</a></li>
-            <li class="nvlist"><a class="nvanchor font" href="#">My List</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="#testimonial">Testimonials</a></li>
         </ul>
         </header>
         <section class="banner" id="banner"></section>
+        <div class = "contact">
+        <h2 class = "titletext"> <span>C</span>ontact Us</h2>
+        <p> You are most welcome to contact us</p>
+ 
+       
+            <h3> Send Message </h3>
+            <div class = "inputbox">
+                <label for="questions">Questions?</label>
+                <textarea name="questions" rows="3" cols="25"></textarea><br>
+                <input type="submit" id="submit" class="btn" value="Submit" onclick="tyAlert()"><br>
+                <input type="reset" id="reset" class="btn" value="Reset"><br>
+            </div>  
+    
+      
         <script type="text/javascript">
             window.addEventListener('scroll',function(){
                 const header = document.querySelector('header');
