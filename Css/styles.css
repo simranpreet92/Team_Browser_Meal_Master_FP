@@ -9,6 +9,7 @@ line-height: 1.6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     min-height: 1000px;
@@ -128,6 +129,24 @@ header.sticky{
     font-weight: 300;
     color: aliceblue;
 }
+section
+{
+    padding: 100px;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position: relative;
+    width: 48%;
+
+}
+
 .titletext{
     color: #111;
     font-size: 2em;
