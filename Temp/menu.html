@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="../Css/styles.css">
 </head>
 <body>
-    <header>  <a href="#" class="logo"><img src="../Image/mm.png" alt="" width="200px" height="80px"></a>
+    <header>   <a href="#" class="logo"><img src="../Image/mm.png" alt="" width="200px" height="80px"></a>
+        <div class="menuToggle" onclick="Tmenu();"></div>
         <ul class="nvbar">
             <li class="nvlist"><a class="nvanchor font" href="index.html">Home</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="aboutUs.html">About Us</a></li>   
+            <li class="nvlist"><a class="nvanchor font" href="menu.html">Menu</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="experts.html">Experts</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="contactUs.html">Contact Us</a></li>
+            <li class="nvlist"><a class="nvanchor font" href="#">my List</a></li>
+    
         </ul>
     </header>
     <section class="banner1" id="banner1"></section>
@@ -161,6 +168,13 @@
             const header = document.querySelector('header');
             header.classList.toggle("sticky",window.scrollY > 0);
         });
+
+        function Tmenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const nvbar = document.querySelector('.nvbar');
+        menuToggle.classList.toggle('active');
+        nvbar.classList.toggle('active');
+    }
         </script>  
         <p class="contact">Call at  <a href="tel:8145559608">(814) 555-9608</a> to order your food</p>
           
@@ -177,6 +191,6 @@
           <p><a href=""><img src="../Image/twitterlogo.png" alt="twitter logo"></a></p>
         </div>
       </footer>
-      <script type="text/javascript" src="scripts/myFunctions.js"></script>
+      
 </body>
 </html>
