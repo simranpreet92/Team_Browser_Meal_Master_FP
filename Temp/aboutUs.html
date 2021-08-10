@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>  <a href="#" class="logo"><img src="../Image/mm.png" alt="" width="200px" height="80px"></a>
+        <div class="menuToggle" onclick="Tmenu();"></div>
         <ul class="nvbar">
             <li class="nvlist"><a class="nvanchor font" href="index.html">Home</a></li>
             <li class="nvlist"><a class="nvanchor font" href="aboutUs.html">About Us</a></li>   
@@ -24,6 +25,13 @@
                 const header = document.querySelector('header');
                 header.classList.toggle("sticky",window.scrollY > 0);
             });
+            function Tmenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const nvbar = document.querySelector('.nvbar');
+        menuToggle.classList.toggle('active');
+        nvbar.classList.toggle('active');
+    }
+  
             </script>   
          <!-- footer section for the copyright and links to social medias -->
      <footer>
@@ -34,9 +42,9 @@
         </div>
         <div id="social">
           <p>Connect with us in</p>
-          <p><a href=""><img src="../Image/fblogo.png" alt="facebook logo"></a></p>
-          <p><a href=""><img src="../Image/twitterlogo.png" alt="twitter logo"></a></p>
-        </div>
+          <p><a href="https://www.facebook.com"><img src="../Image/fblogo.png" alt="facebook logo"></a></p>
+          <p><a href="https://www.twitter.com"><img src="../Image/twitterlogo.png" alt="twitter logo"></a></p>
+         </div>
       </footer>   
 </body>
 </html>
