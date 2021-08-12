@@ -118,6 +118,24 @@ input{
     cursor: pointer;
     transition: 0.3%;
 }
+
 .btn:hover{
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px #FF1493;
+}
+#b1{
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: #FF1493;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3%;
+    
+        width: 50%;
+   
+        margin-left: auto;
+
+    
 }

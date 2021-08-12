@@ -21,20 +21,46 @@
                 
                 
             </div>
-
-           <div class="form-step form-step-active">
-               <div class="input-group">
-                   <label for="username">username</label>
-                   <input type="text" name="username" id="username"/>
+            <div class="form-step form-step-active">
+                <div class="input-group">
+                    <label for="username">username</label>
+                    <input type="text" name="username" id="username"/>
+                </div>
+                <div class="input-group">
+                    <label for="position">Comments</label>
+                    <input type="text area" name="position" id="position"/>
+                </div>
+                <div class="">
+                 <button  id = "b1"  >     <a href="#" class="btn btn-next width-50 ml-auto"  id = "next" >Next</a></button>
                </div>
-               <div class="input-group">
-                   <label for="position">Comments</label>
-                   <input type="text area" name="position" id="position"/>
                </div>
-               <div class="">
-                   <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
-               </div>
-           </div>
+                    <script type="text/javascript" src ="https://unpkg.com/localbase/dist/localbase.dev.js">
+                   
+                   </script>
+                               
+                   <script>
+                    let db = new Localbase('db')
+                    
+                    let button1 = document.getElementById('next');
+                    button1.addEventListener('click' , next);
+                    function next(){
+                         console.log('now started')
+                         let userN = "";
+                                   userN = document.getElementById("username").value;
+                                   let userComment = "";
+                                   userComment = document.getElementById("position").value;
+               
+                       db.collection('users').add({
+                     
+                     id: 1,
+                     name: userN,
+                     comment : userComment
+                    
+                   })
+                    }
+                   </script>
+          
+ 
            <div class="form-step ">
             <div class="input-group">
                 <label for="username">Phone</label>
