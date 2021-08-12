@@ -24,7 +24,7 @@ input{
 
 }
 .width-50{
-    width: 50%;
+    width: 100%;
 }
 .ml-auto{
     margin-left: auto;
@@ -123,8 +123,8 @@ input{
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px #FF1493;
 }
 #b1{
-    padding: 0.75rem;
-    display: block;
+    padding: 0em;
+    display: inline-block;
     text-decoration: none;
     background-color: #FF1493;
     color: #f3f3f3;
