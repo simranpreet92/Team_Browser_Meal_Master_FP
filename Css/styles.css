@@ -85,6 +85,33 @@ body{
     background-size: cover;
     font-family: 'Rubik', sans-serif;
 }
+.banner3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Image/bg2.jpg);
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+.banner3 .content3{
+    max-width: 900px;
+    text-align: left;
+    
+}
+
+h3{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+.parafont{
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
 
 .heading1{
     font-size: 4em;
@@ -340,6 +367,7 @@ footer a{
     font-style: italic;
    
 }
+
 @media (max-width:991px) {
     header,
     header.sticky{
