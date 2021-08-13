@@ -2,180 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Master</title>
-    <link rel="stylesheet" href="../Css/styles.css">
-</head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="../Css/login.css" >
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ </head>
 <body>
-    <header>
-        <a href="#" class="logo"><img src="../Image/mm.png" alt="" width="200px" height="80px"></a>
-        <div class="menuToggle" onclick="Tmenu();"></div>
-        <ul class="nvbar">
-            <li class="nvlist"><a class="nvanchor font" href="index.html">Home</a></li>
-            <li class="nvlist"><a class="nvanchor font" href="aboutUs.html">About Us</a></li>   
-            <li class="nvlist"><a class="nvanchor font" href="menu.html">Menu</a></li>
-            <li class="nvlist"><a class="nvanchor font" href="experts.html">Experts</a></li>
-            <li class="nvlist"><a class="nvanchor font" href="contactUs.html">Contact Us</a></li>
-            <li class="nvlist"><a class="nvanchor font" href="favorite.html">My Favorite</a></li>
-            <li class="nvlist"><a class="nvanchor font" href="login.html">Logout</a></li>
-        </ul>
-    </header>
+    <div class="bg-img">
+           <div class="content">
+               <header>Login Form</header>
+               <form action="#">
+                   <div class="field">
+                       <span class="fa fa-user"></span>
+                       <input type="text"  placeholder="Enter Name" id = "uname">
+                   </div>
+                   <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" class="password" required placeholder="Enter Password" id = "pass">
+                    <span class="show">SHOW</span>
+                </div>
 
-    <section class="banner" id="banner">
-    <div class="content">
-    <h2 class="heading1">WELCOME TO MEAL MASTER</h2>
+                <div class="field space">
+                    <input type="submit" placeholder="LOGIN" id = "loged">
+                </div>
 
-    <p class="para font">A great restaurant is one that just makes you feel like you're not sure whether 
-        you went out or you came home and confuses you. If it can do both of those things at the same time,
-         you're hooked.
-        
-    </p>
-    <a class="btn" href="#section2">Our Menu</a>
+            <div class="login">
+                Or login with
+            </div>
+            <div class="link">
+                <div class="facebook">
+                    <i class="fab fa-facebook-f"><a href = "https://www.facebook.com"><span>Facebook</span></a></i>
+            </div>
+            <div class="instagram">
+                <i class="fab fa-instagram"><a href = "https://www.instagram.com"><span>Instagram</span></a></i>
+        </div>
+
+            </div>
+            <div class="signup">Don't have account ?
+                <a href="registration.html">Signup Now</a>
+            </div>
+               </form>
+           </div>
     </div>
-    </section>
-    <section class="section2" id="section2">
-        <div class="title">
-            <h2 class="titletext font">Our <span class="titlepink">H</span>ighlights</h2>
-            <p class="font">
-            	
-            	This is our Menu to explore your choice and food
-            </p>
-        </div>
-        <div class="content">
-            <div class="box">
-                <div class="imagebox">
-                    <img src="../Image/item1.jpg" alt="menu1">
-                </div>
-                <div class="text">
-                    <h3 class="font">Special Salads</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imagebox">
-                    <img src="../Image/item2.jpg" alt="menu2">
-                </div>
-                <div class="text">
-                    <h3 class="font">Special Soup</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imagebox">
-                    <img src="../Image/item3.jpg" alt="menu1">
-                </div>
-                <div class="text">
-                    <h3 class="font">Special Salads</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imagebox">
-                    <img src="../Image/item4.jpg" alt="menu1">
-                </div>
-                <div class="text">
-                    <h3 class="font">Special Salads</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imagebox">
-                    <img src="../Image/item5.jpg" alt="menu1">
-                </div>
-                <div class="text">
-                    <h3 class="font">Special Salads</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imagebox">
-                    <img src="../Image/item6.jpg" alt="menu1">
-                </div>
-                <div class="text">
-                    <h3 class="font">Special Salads</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="title">
-            <a href="menu.html" class="btn font">View All</a>
-        </div>
-    </section>
-        <section class="testimonial" id="testimonial">
-            <div class="title">
-                <h2 class="titletext wt font">They <span class="titlepink">S</span>aid About Us</h2>
-                <p class="wt font">Our customers say it all </p>
-            </div>
-            <div class="content1">
-                <div class="box1">
-                    <div class="imagebox1">
-                        <img class="testimage" src="../Image/testi1.jpg" alt="">
-                    </div>
-
-                    <div class="text">
-                        <p class="font pform">
-                      I had breakfast there this morning and dinner tonight. All were well beyond my expectations. Everything is so fresh.
-                       Best clam chowder I have ever had. Clams and linguine were out of this world. Breakfast will knock your slippers off.
-                       . The pastries were delicious and fresh. When we dined for dinner, the food was also fresh and delicious.
-                        </p>
-                        <h3 class="font hform">Amara Smith</h3>
-                    </div>
-                </div>
-                <div class="box1">
-                    <div class="imagebox1">
-                        <img class="testimage" src="../Image/testi2.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <p class="font pform">
-                            We like to go to The Fairway every time we come to the Cape. 
-                            The food is always delicious! This is the first year we could make reservations (probably due to spacing because of 
-                            the virus). Our waitress, Casey, was great!This place knows how to satisfy their clients. Always with a super nice mindset. 
-                            The food is affordably priced, always delicious and clean.
-                    
-                        </p>
-                        <h3 class="font hform">Jammy Josephine</h3>
-                    </div>
-                </div>
-                <div class="box1">
-                    <div class="imagebox1">
-                        <img class="testimage" src="../Image/testi3.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <p class="font pform">
-                            “Absolutely Delicious!!”
-
-                            My husband and I had our Anniversary dinner at the Fairway last night. We sat outside on the terrace which
-                             was very pretty and private. Our waitress was wonderful and the food was absolutely delicious!! It could not have been more 
-                             spectacular! We would highly recommend it to everyone!!
-                        </p>
-                        <h3 class="font hform">Linnea Davis</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-<script type="text/javascript">
-    window.addEventListener('scroll',function(){
-        const header = document.querySelector('header');
-        header.classList.toggle("sticky",window.scrollY > 0);
-    });
-
-    function Tmenu(){
-        const menuToggle = document.querySelector('.menuToggle');
-        const nvbar = document.querySelector('.nvbar');
-        menuToggle.classList.toggle('active');
-        nvbar.classList.toggle('active');
-    }
+    
+    <script type="text/javascript" src ="https://unpkg.com/localbase/dist/localbase.dev.js">
+                   
     </script>
+                
+    <script>
+     let db = new Localbase('db')
+     
+     let button1 = document.getElementById('loged');
+     var flag = 0;
+     button1.addEventListener('click' , next);
+     function next(){
+        let uname = document.getElementById("uname").value;
+        let upass = document.getElementById("pass").value;
+        
+        db.collection('users').doc({ Name: uname , Password: upass}).get().then(document => {
+           
+            console.log( document) 
+           if(document != null)
+            { 
+                alert("login successful" );
+                window.location.href = "home.html"
+            }
+           
+       else{
+            alert("Either empty or invalid username/password combination")
+        }
+  
 
+}
+
+)
+
+      
+
+         }
          
-         <!-- footer section for the copyright and links to social medias -->
-         <footer>
-            <div id="copyright">
-              <p><!-- &#169; copyright symbol html entity number -->
-              &copy; Copyright 2020. All Rights Reserved. <br>
-              <a href="mailto:mealmaster@food.net"><b>mealmaster@food.net</b></a></p>
-            </div>
-            <div id="social">
-              <p>Connect with us in</p></br>
-              <p><a href="https://www.facebook.com"><img src="../Image/fblogo.png" alt="facebook logo"></a>
-              <a href="https://www.twitter.com"><img src="../Image/twitterlogo.png" alt="twitter logo"></a></p>
-             </div>
-          </footer>
+     </script>
 </body>
 </html>
