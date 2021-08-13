@@ -18,7 +18,7 @@
                    </div>
                    <div class="field space">
                     <span class="fa fa-lock"></span>
-                    <input type="password" class="password" required placeholder="password" id = "pass">
+                    <input type="password" class="password" required placeholder="Enter Password" id = "pass">
                     <span class="show">SHOW</span>
                 </div>
 
@@ -31,10 +31,10 @@
             </div>
             <div class="link">
                 <div class="facebook">
-                    <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                    <i class="fab fa-facebook-f"><a href = "https://www.facebook.com"><span>Facebook</span></a></i>
             </div>
             <div class="instagram">
-                <i class="fab fa-instagram"><span>Instagram</span></i>
+                <i class="fab fa-instagram"><a href = "https://www.instagram.com"><span>Instagram</span></a></i>
         </div>
 
             </div>
@@ -53,25 +53,31 @@
      let db = new Localbase('db')
      
      let button1 = document.getElementById('loged');
+     var flag = 0;
      button1.addEventListener('click' , next);
      function next(){
         let uname = document.getElementById("uname").value;
-
-        db.collection('users').doc({ name: uname }).get().then(document => {
-  console.log(document)
-  if(uname )
-           {
-               alert("result found");
-               console.log("2" + document)
-           }
-           else
-           {
-               alert("not found");
-           }
-
-})
+        let upass = document.getElementById("pass").value;
+        
+        db.collection('users').doc({ Name: uname , Password: upass}).get().then(document => {
            
-            
+            console.log( document) 
+           if(document != null)
+            { 
+                alert("login successful" );
+                window.location.href = "index.html"
+            }
+           
+       else{
+            alert("Either empty or invalid username/password combination")
+        }
+  
+
+}
+
+)
+
+      
 
          }
          
