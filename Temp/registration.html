@@ -23,12 +23,12 @@
             </div>
             <div class="form-step form-step-active">
                 <div class="input-group">
-                    <label for="username">username</label>
+                    <label for="username">Username</label>
                     <input type="text" name="username" id="username"/>
                 </div>
                 <div class="input-group">
-                    <label for="position">Comments</label>
-                    <input type="text area" name="position" id="position"/>
+                    <label for="position">Password</label>
+                    <input type="password" name="position" id="password"/>
                 </div>
                 <div class="">
                  <button  id = "b1"  >     <a href="#" class="btn btn-next width-50 ml-auto"  id = "next" >Next</a></button>
@@ -86,13 +86,13 @@
               let userN = "";
                         userN = document.getElementById("username").value;
                         let userComment = "";
-                        userComment = document.getElementById("position").value;
+                        userComment = document.getElementById("password").value;
     
             db.collection('users').add({
           
          
-          name: userN,
-          comment : userComment
+          Name: userN,
+          Password : userComment
          
         })
          }
