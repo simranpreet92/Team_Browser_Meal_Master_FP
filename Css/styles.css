@@ -479,7 +479,22 @@ footer a{
     height: 300px;
     margin-top: 20px;
 }
+<<<<<<< HEAD
 
+=======
+.video{
+    width : 100%;
+    padding: 1em;
+    text-align: center;
+    margin-left: 100px;
+}
+video
+{
+    border: 0.5em ridge #fff;
+    height: auto;
+    max-width: 100%;
+}
+>>>>>>> 6c10e970a024d6ed40d1752576277691df8b7980
 footer{
     background-color: #111;
     text-align: center;
