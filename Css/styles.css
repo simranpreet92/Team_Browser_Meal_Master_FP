@@ -468,7 +468,22 @@ footer a{
     height: 300px;
     margin-top: 20px;
 }
-
+.video{
+    width : 30%;
+    padding-right: 15px;
+    margin-right: 15px;
+    float: left;
+    font-style: italic;
+    background-color: wheat;
+    padding: 1em;
+ text-align: center;
+}
+video
+{
+    border: 0.5em ridge #fff;
+    height: auto;
+    max-width: 100%;
+}
 footer{
     background-color: #111;
     text-align: center;
