@@ -53,25 +53,29 @@
      let db = new Localbase('db')
      
      let button1 = document.getElementById('loged');
+     var flag = 0;
      button1.addEventListener('click' , next);
      function next(){
         let uname = document.getElementById("uname").value;
-
+        
         db.collection('users').doc({ name: uname }).get().then(document => {
-  console.log(document)
-  if(uname )
-           {
-               alert("result found");
-               console.log("2" + document)
-           }
-           else
-           {
-               alert("not found");
-           }
-
-})
-           
             
+            console.log( document) 
+            if(document != null)
+            { 
+                alert("login successful" );
+                window.location.href = "index.html"
+            }
+        
+        
+              
+       
+
+}
+
+)
+
+      
 
          }
          
